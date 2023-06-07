@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import Any, Iterable, Iterator
 
-from rlscommon.types import AnyCallable
+from rlsutils.types import AnyCallable
 
 __all__ = ["Registry"]
 

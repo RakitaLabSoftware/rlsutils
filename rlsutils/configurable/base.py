@@ -1,7 +1,7 @@
 import abc
 from typing import Any, Self
 
-from rlscommon.storage.base import Storage
+from rlsutils.storage.base import Storage
 
 class Configurable(abc.ABC):
     storage: Storage

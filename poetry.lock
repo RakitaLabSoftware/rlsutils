@@ -657,19 +657,19 @@ packaging = "*"
 
 [[package]]
 name = "hydra-zen"
-version = "0.9.1"
+version = "0.10.1"
 description = "Configurable, reproducible, and scalable workflows in Python, via Hydra"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "hydra_zen-0.9.1-py3-none-any.whl", hash = "sha256:379dfd2340b079832f2880d7bb8338aade35a64d5b4a47bbb125984ac847fc48"},
-    {file = "hydra_zen-0.9.1.tar.gz", hash = "sha256:3f119d1e565fd4820c770643dc761370cc8d4abdc3414ed07f87d434a50b6e46"},
+    {file = "hydra_zen-0.10.1-py3-none-any.whl", hash = "sha256:8a572090c13bf31be8794fba4c1b3bcd9398e74cd78b6ea5115fabb488b40c8b"},
+    {file = "hydra_zen-0.10.1.tar.gz", hash = "sha256:f7a426bf3353c8e245decec09ef19a5387486d57a5824f5ef6fb9483895190f4"},
 ]
 
 [package.dependencies]
 hydra-core = ">=1.1.0"
-typing-extensions = ">=4.1.0"
+typing-extensions = ">=4.1.0,<4.6.0 || >4.6.0"
 
 [package.extras]
 beartype = ["beartype (>=0.8.0)"]
@@ -2394,4 +2394,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "864296fa645e4da2f3f11922f0340587b6b68939ee40be043c58fa3bf4a8067a"
+content-hash = "1595d373b11661f3e61c6333f5f6cf0fdbdb1e524507907dd9087d96a91566ee"

@@ -1,18 +1,18 @@
 [tool.poetry]
-name = "rlscommon"
+name = "rlsutils"
 version = "0.0.1"
 description = "Common utilities for managing RLS projects"
 authors = ["Mark Mayerfeld <mark.m.mayerfeld@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [
-    { include = "rlscommon" },
-    { include = "rlscommon/**/*.py" },
+    { include = "rlsutils" },
+    { include = "rlsutils/**/*.py" },
 ]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-hydra-zen = "^0.9.1"
+hydra-zen = "^0.10.1"
 pandas = "^1.5.3"
 pydantic = "^1.10.5"
 joblib = "^1.2.0"
