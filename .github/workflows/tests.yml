@@ -26,14 +26,13 @@ jobs:
       uses: abatilo/actions-poetry@v2
       with:
         poetry-version: 1.3.2
-    - name: View poetry --help
-      run: poetry --help
     - name: Install deps
       run: poetry install --with dev
       
+    - name: Activate shell
+      run: poetry env use ${{matrix.python-version}}
+    
     - name: Run Tests
-      run: |
-        poetry env use ${{matrix.python-version}}
-        tox
+      run: tox
       env:
         PLATFORM: ${{ matrix.platform }}
