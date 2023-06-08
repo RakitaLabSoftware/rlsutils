@@ -29,7 +29,7 @@ jobs:
     - name: View poetry --help
       run: poetry --help
     - name: Install deps
-      run: poetry install
+      run: poetry install --with dev
       
     - name: Run Tests and Generate Coverage
       run: tox
