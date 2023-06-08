@@ -31,6 +31,11 @@ jobs:
       
     - name: Activate shell
       run: poetry env use ${{matrix.python-version}}
+
+    - name: Format and sort
+      run: |
+        black .
+        isort .
     
     - name: Run Tests
       run: pytest
