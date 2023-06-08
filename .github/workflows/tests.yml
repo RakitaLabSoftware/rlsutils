@@ -34,10 +34,10 @@ jobs:
 
     - name: Format and sort
       run: |
-        black .
-        isort .
+        poetry run black .
+        poetry run isort .
     
     - name: Run Tests
-      run: pytest
+      run: poetry run tox
       env:
         PLATFORM: ${{ matrix.platform }}

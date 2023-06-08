@@ -3,6 +3,7 @@ from typing import Any, Self
 
 from rlsutils.storage.base import Storage
 
+
 class Configurable(abc.ABC):
     storage: Storage
 
