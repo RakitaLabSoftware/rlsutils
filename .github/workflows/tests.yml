@@ -33,6 +33,6 @@ jobs:
       run: poetry env use ${{matrix.python-version}}
     
     - name: Run Tests
-      run: tox
+      run: pytest
       env:
         PLATFORM: ${{ matrix.platform }}
