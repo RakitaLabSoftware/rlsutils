@@ -1,5 +1,7 @@
 from typing import Any
+
 from rlsutils.configurable.parametrize import make_component_config
+import hydra_zen as hz
 
 
 class MyClass:
@@ -69,6 +71,8 @@ def test_class_params():
         "d": 2.0,
         "e": "hello",
     }
+    inst_obj = hz.instantiate(params)
+    assert inst_obj.__class__ == obj.__class__
 
 
 def test_nested_class_params():
@@ -87,3 +91,5 @@ def test_nested_class_params():
             "e": "hello",
         },
     }
+    inst_obj = hz.instantiate(params)
+    assert inst_obj.__class__ == obj.__class__

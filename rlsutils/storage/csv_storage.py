@@ -49,9 +49,6 @@ class CSVStorage(Storage):
                 if type(value) not in supported_types or (
                     type(value) == np.array and value.ndim == 1
                 ):
-                    # TODO: Refactor
-
-                    print(type(value))
                     return joblib.load(value[0])
                 return value
 
