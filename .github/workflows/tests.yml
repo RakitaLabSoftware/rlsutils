@@ -31,9 +31,9 @@ jobs:
     - name: Install deps
       run: poetry install --with dev
       
-    - name: Run Tests and Generate Coverage
+    - name: Run Tests
       run: |
         poetry env use ${{matrix.python-version}}
-        poetry tox
+        tox
       env:
         PLATFORM: ${{ matrix.platform }}
